@@ -120,7 +120,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BarController.cs" />
+    <Compile Include="Controllers\CVController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -163,6 +166,14 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Foo.cshtml" />
+    <Content Include="Views\Bar\Index.cshtml" />
+    <Content Include="Views\Bar\About.cshtml" />
+    <Content Include="Views\Person\Index.cshtml" />
+    <Content Include="Views\Bar\Test.cshtml" />
+    <Content Include="Views\CV\Index.cshtml" />
+    <Content Include="Views\CV\Education.cshtml" />
+    <Content Include="Views\CV\Projects.cshtml" />
+    <Content Include="Views\CV\Reference.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
