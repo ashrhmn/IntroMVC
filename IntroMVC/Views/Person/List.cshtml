@@ -1,11 +1,26 @@
-﻿
+﻿@model  List<IntroMVC.Models.Person>
 @{
     ViewBag.Title = "List";
 }
 
 <h2>List</h2>
 
-@for (int i = 0; i < 2; ++i)
-{
-    <h1>@ViewBag.persons[i]</h1>
-}
+<table class="table table-bordered">
+    <thead>
+        <tr>ID</tr>
+        <tr>Name</tr>
+    </thead>
+    <tbody>
+
+
+        @foreach (var person in Model)
+        {
+        <tr>
+            <td>@person.Id</td>
+            <td>@person.Name</td>
+        </tr>
+        }
+
+
+    </tbody>
+</table>

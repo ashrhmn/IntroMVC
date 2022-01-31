@@ -1,0 +1,26 @@
+﻿@model  List<IntroMVC.Models.Product>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+
+    <td>ID</td>
+    <td>Name</td>
+
+    </tr>    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Name</td>
+            </tr>
+        }
+    </tbody>
+</table>

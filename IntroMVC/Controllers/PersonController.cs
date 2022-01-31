@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IntroMVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,9 +19,16 @@ namespace IntroMVC.Controllers
 
         public ActionResult List()
         {
-            String[] persons = new String[] { "Ashik","Mortuja" };
-            ViewBag.persons = persons;
-            return View();
+            List<Person> persons = new List<Person>();
+            for(int i = 0; i < 10; i++)
+            {
+                persons.Add(new Person
+                {
+                    Id = i,
+                    Name = "Ashik"
+                });
+            }
+            return View(persons);
         }
     }
 }
