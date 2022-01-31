@@ -11,6 +11,15 @@ namespace IntroMVC.Controllers
         // GET: Person
         public ActionResult Index()
         {
+            ViewBag.FirstName = "Ashik";
+            ViewBag.LastName = "Rahman";
+            return View();
+        }
+
+        public ActionResult List()
+        {
+            String[] persons = new String[] { "Ashik","Mortuja" };
+            ViewBag.persons = persons;
             return View();
         }
     }
