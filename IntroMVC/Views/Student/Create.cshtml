@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Student.cshtml";
+}
+
+<h2>Create</h2>
+
+<form method="post" action="/Student/Submit">
+    <input name="Name" type="text" placeholder="Name" />
+    <input name="ID" type="text" placeholder="ID" />
+    <input name="Department" type="text" placeholder="Department" />
+    <input type="submit" value="Submit"/>
+</form>

@@ -1,0 +1,27 @@
+﻿@model  List<IntroMVC.Models.Student>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Student.cshtml";
+}
+
+<h2>Student List</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Department</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (IntroMVC.Models.Student student in Model)
+        {
+            <tr>
+                <td>@student.ID</td>
+                <td>@student.Name</td>
+                <td>@student.Department</td>
+            </tr>
+        }
+    </tbody>
+</table>
